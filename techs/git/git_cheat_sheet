@@ -1,0 +1,58 @@
+Delete Local Branch
+To delete the local branch use one of the following:
+$ git branch -d branch_name
+$ git branch -D branch_name
+
+
+GIT Checkout branch
+git checkout -b <new-branch>
+
+GIT Branch
+$ git push -d <remote_name> <branch_name>
+$ git branch -d <branch_name>
+
+
+GIT (gerrit) COMMIT
+git status
+git add .
+git status
+git commit -sa
+git review <remote branch>
+
+ 
+•	Amend commit 
+git review -d 9889.  // changes the branch to review branch
+git commit --amend.  
+git review nso/casablanca. Or git review 
+
+
+Checkout ONAP Gerrit 
+Example : you want to check out the specific revision on the branch, - https://gerrit.onap.org/r/c/dcaegen2/services/mapper/+/102522
+>git fetch "https://gerrit.onap.org/r/dcaegen2/services/mapper" refs/changes/22/102522/1 && git checkout FETCH_HEAD
+
+Override changes
+
+If you want to overwrite only one file:
+git fetch
+git checkout origin/master <filepath>
+If you want to overwrite all changed files:
+git fetch
+git reset --hard origin/master
+
+
+See all branches 
+$ git branch -r
+  origin/HEAD -> origin/master
+  origin/dev-NSO-S5S3-1454
+  origin/dev-NSO-S5S3-1454_link_interim
+  origin/globaltemplate
+  origin/master
+  origin/refactorintent
+
+Git Commit on new branch
+
+•	git checkout -b jigish
+•	git status
+•	Git add <file(s)>
+•	git commit -m "adding dev stage in pipeline."
+  -   git push origin jigish
