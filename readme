@@ -1,7 +1,1 @@
-install RKE on a VM  (nto required because, this can be done as side step. )
- document  - https://rancher.com/docs/rke/latest/en/installation/
-
-       > wget https://github.com/rancher/rke/releases/download/v1.0.8/rke_linux-amd64
-       > mv rke_linux-amd64 rke
-       > sudo cp rke /usr/bin/
-       > sudo chmod +x /usr/bin/rke
+I am sharing my personal notes for anyone to use. I hope that these notes will be useful to someone. 
