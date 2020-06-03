@@ -1,10 +1,11 @@
 kubernetes
 ==========
 
-# creating kubectl alias
+#. creating kubectl alias** 
+
 alias k=kubectl
 
-CHECK RUNNING PODS
+#. CHECK RUNNING PODS
 $ kubectl get pods -n onap
 NAME                           READY     STATUS    RESTARTS   AGE
 frank-cassandra-0              0/1       Pending   0          25s
@@ -16,7 +17,7 @@ $ kubectl version
 Client Version: version.Info{Major:"1", Minor:"10", GitVersion:"v1.10.0", GitCommit:"fc32d2f3698e36b93322a3465f63a14e9f0eaead", GitTreeState:"clean", BuildDate:"2018-03-26T16:55:54Z", GoVersion:"go1.9.3", Compiler:"gc", Platform:"darwin/amd64"}
 Server Version: version.Info{Major:"1", Minor:"14+", GitVersion:"v1.14.10-gke.36", GitCommit:"34a615f32e9a0c9e97cdb9f749adb392758349a6", GitTreeState:"clean", BuildDate:"2020-04-06T16:33:17Z", GoVersion:"go1.12.12b4", Compiler:"gc", Platform:"linux/amd64"}
 
-Access the POD 
+**Access the POD**
 
 kubectl exec -it onap-jparghi-so-5997548d8-8kk7j bash
 
