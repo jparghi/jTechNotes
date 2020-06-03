@@ -22,6 +22,8 @@ Guide
 
    license
    help  
+   kubernetes
+   contents
 
 
 Indices and tables
